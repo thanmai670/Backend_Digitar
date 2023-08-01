@@ -1,0 +1,8 @@
+fastapi[all]
+openai
+typing-extensions
+scipy
+numpy
+nvidia-riva-client
+Deepgram-sdk
+starlette
