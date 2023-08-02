@@ -10,7 +10,7 @@ from fastapi.templating import Jinja2Templates
 from typing import Dict, Callable
 from scipy.signal import resample_poly
 import io
-from dotenv import load_dotenv
+
 import openai
 import numpy as np
 import base64
@@ -19,7 +19,7 @@ import wave
 from deepgram import Deepgram
 from starlette.middleware.cors import CORSMiddleware
 
-load_dotenv()
+
 dg_client = Deepgram(os.getenv("DEEPGRAM_API_KEY"))
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
